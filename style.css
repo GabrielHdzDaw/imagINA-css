@@ -56,6 +56,15 @@ h2 {
   text-align: center;
 }
 
+quote {
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+  display: block;
+  font-size: 1.2em;
+  font-style: italic;
+  margin-top: 2.5rem;
+}
+
 #tabla-fotos {
   margin-left: auto;
   margin-right: auto;
@@ -135,7 +144,11 @@ a {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.2em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 70%;
 }
 
 #color-logo {
