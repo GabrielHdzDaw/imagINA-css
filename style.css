@@ -1,0 +1,143 @@
+:root {
+  --background-color: #242b1b;
+  --background-color2: #495737;
+  --headings-color: #87ae57;
+  --text-color: #99da49;
+  --links-color: #bbff68;
+  --blocks-color1: #52594a;
+  --blocks-color2: #546b38;
+  
+  --hsl: hsl(337, 54%, 43%);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  user-select: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: var(--blocks-color1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px rgb(0, 0, 0);
+  padding: 10px;
+}
+
+header h1 {
+  text-shadow: 5px 3px 2px black;
+}
+header img {
+  width: 25%;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+}
+
+nav li a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  color: var(--headings-color);
+  background-color: var(--blocks-color1);
+}
+
+h2 {
+  box-shadow: 0px 5px 5px rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+#tabla-fotos {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tabla-fotos img {
+  object-fit: cover;
+  height: 300px;
+  border: black solid 5px;
+  border-radius: 10px;
+}
+
+
+figure {
+  background-color: var(--blocks-color1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+figcaption {
+  text-align: center;
+  font-weight: bold;
+}
+
+#tabla-planes{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tabla-planes th:first-child{
+  border-top-left-radius: 10px;
+}
+
+#tabla-planes th:last-child{
+  border-top-right-radius: 10px;
+}
+
+#tabla-planes tr:last-child td:first-child{
+  border-bottom-left-radius: 10px;
+}
+
+#tabla-planes tr:last-child td:last-child{
+  border-bottom-right-radius: 10px;
+}
+
+#tabla-planes thead{
+  font-size: 1.5rem;
+}
+
+#tabla-planes th{
+  padding: 10px;
+}
+
+#tabla-planes thead th:nth-child(odd){
+  background-color: color-mix(in srgb, var(--blocks-color1) 70%, white 30%)
+}
+
+#tabla-planes thead th:nth-child(even){
+  background-color: color-mix(in srgb, var(--blocks-color2) 70%, white 30%)
+}
+
+#tabla-planes td:nth-child(odd){
+  background-color: color-mix(in srgb, var(--blocks-color1) 70%, black 30%)
+}
+
+#tabla-planes td:nth-child(even){
+  background-color: color-mix(in srgb, var(--blocks-color2) 70%, black 30%)
+}
+
+#tabla-planes tbody tr:last-child{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+a {
+  color: var(--links-color);
+}
+
+p {
+  font-size: 1em;
+}
+
+#color-logo {
+  color: #c2f583;
+}
