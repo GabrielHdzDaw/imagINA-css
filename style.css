@@ -6,7 +6,7 @@
   --links-color: #bbff68;
   --blocks-color1: #52594a;
   --blocks-color2: #546b38;
-  
+
   --hsl: hsl(337, 54%, 43%);
 }
 
@@ -27,6 +27,10 @@ header {
   padding: 10px;
 }
 
+#color-logo {
+  color: #c2f583;
+}
+
 header h1 {
   text-shadow: 5px 3px 2px black;
 }
@@ -34,9 +38,29 @@ header img {
   width: 25%;
 }
 
+nav {
+  margin-right: 20px;
+  padding: 10px;
+  background-color: var(--blocks-color1);
+  box-shadow: 5px 5px 7px black;
+  border-radius: 10px;
+}
+
+nav ul {
+  display: none;
+}
+
+nav:hover ul {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+}
+
 nav li {
   list-style: none;
-  display: inline;
+  display: block;
+  text-decoration: none;
 }
 
 nav li a {
@@ -54,6 +78,79 @@ h2 {
   border-radius: 10px;
   padding: 20px;
   text-align: center;
+
+  #tabla-fotos {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #tabla-fotos img {
+    object-fit: cover;
+    height: 300px;
+    border: black solid 5px;
+    border-radius: 10px;
+  }
+
+  figure {
+    background-color: var(--blocks-color1);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  figcaption {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #tabla-planes {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #tabla-planes th:first-child {
+    border-top-left-radius: 10px;
+  }
+
+  #tabla-planes th:last-child {
+    border-top-right-radius: 10px;
+  }
+
+  #tabla-planes tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+  }
+
+  #tabla-planes tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+  }
+
+  #tabla-planes thead {
+    font-size: 1.5rem;
+  }
+
+  #tabla-planes th {
+    padding: 10px;
+  }
+
+  #tabla-planes thead th:nth-child(odd) {
+    background-color: color-mix(in srgb, var(--blocks-color1) 70%, white 30%);
+  }
+
+  #tabla-planes thead th:nth-child(even) {
+    background-color: color-mix(in srgb, var(--blocks-color2) 70%, white 30%);
+  }
+
+  #tabla-planes td:nth-child(odd) {
+    background-color: color-mix(in srgb, var(--blocks-color1) 70%, black 30%);
+  }
+
+  #tabla-planes td:nth-child(even) {
+    background-color: color-mix(in srgb, var(--blocks-color2) 70%, black 30%);
+  }
+
+  #tabla-planes tbody tr:last-child {
+    text-align: center;
+    font-size: 1.2rem;
+  }
 }
 
 quote {
@@ -63,80 +160,6 @@ quote {
   font-size: 1.2em;
   font-style: italic;
   margin-top: 2.5rem;
-}
-
-#tabla-fotos {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#tabla-fotos img {
-  object-fit: cover;
-  height: 300px;
-  border: black solid 5px;
-  border-radius: 10px;
-}
-
-
-figure {
-  background-color: var(--blocks-color1);
-  padding: 20px;
-  border-radius: 10px;
-}
-
-figcaption {
-  text-align: center;
-  font-weight: bold;
-}
-
-#tabla-planes{
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#tabla-planes th:first-child{
-  border-top-left-radius: 10px;
-}
-
-#tabla-planes th:last-child{
-  border-top-right-radius: 10px;
-}
-
-#tabla-planes tr:last-child td:first-child{
-  border-bottom-left-radius: 10px;
-}
-
-#tabla-planes tr:last-child td:last-child{
-  border-bottom-right-radius: 10px;
-}
-
-#tabla-planes thead{
-  font-size: 1.5rem;
-}
-
-#tabla-planes th{
-  padding: 10px;
-}
-
-#tabla-planes thead th:nth-child(odd){
-  background-color: color-mix(in srgb, var(--blocks-color1) 70%, white 30%)
-}
-
-#tabla-planes thead th:nth-child(even){
-  background-color: color-mix(in srgb, var(--blocks-color2) 70%, white 30%)
-}
-
-#tabla-planes td:nth-child(odd){
-  background-color: color-mix(in srgb, var(--blocks-color1) 70%, black 30%)
-}
-
-#tabla-planes td:nth-child(even){
-  background-color: color-mix(in srgb, var(--blocks-color2) 70%, black 30%)
-}
-
-#tabla-planes tbody tr:last-child{
-  text-align: center;
-  font-size: 1.2rem;
 }
 
 a {
@@ -151,6 +174,13 @@ p {
   width: 70%;
 }
 
-#color-logo {
-  color: #c2f583;
+footer {
+  background-color: var(--blocks-color1);
+  box-shadow: 5px 5px 5px black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
 }
