@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
   --background-color: #242b1b;
   --background-color2: #495737;
@@ -10,22 +12,35 @@
   --hsl: hsl(337, 54%, 43%);
 }
 
+.sombra-caja {
+  box-shadow: 0px 5px 5px rgb(0, 0, 0);
+}
+
+.sombra-texto {
+  text-shadow: 0px 3px 5px black;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.bloque {
+  background-color: var(--blocks-color1);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-  user-select: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-  background-color: var(--blocks-color1);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 10px;
-  box-shadow: 0px 5px 5px rgb(0, 0, 0);
-  padding: 10px;
   position: sticky;
+  justify-content: space-between;
   top: 0;
 }
 
@@ -33,9 +48,6 @@ header {
   color: #c2f583;
 }
 
-header h1 {
-  text-shadow: 5px 3px 2px black;
-}
 header img {
   width: 25%;
 }
@@ -44,10 +56,8 @@ nav {
   margin-right: 20px;
   padding: 10px;
   background-color: var(--blocks-color1);
-  box-shadow: 5px 5px 7px black;
+
   border-radius: 10px;
-  
-  
 }
 
 nav ul {
@@ -68,7 +78,6 @@ nav li {
   list-style: none;
   display: block;
   text-decoration: none;
-  
 }
 
 nav li a {
@@ -84,97 +93,108 @@ h1,
 h2 {
   color: var(--headings-color);
   background-color: var(--blocks-color1);
+  justify-content: space-between;
 }
 
 h2 {
-  box-shadow: 0px 5px 5px rgb(0, 0, 0);
-  border-radius: 10px;
-  padding: 20px;
   text-align: center;
+  justify-content: space-between;
 }
-  #tabla-fotos {
-    margin-left: auto;
-    margin-right: auto;
-  }
 
-  #tabla-fotos img {
-    object-fit: cover;
-    height: 300px;
-    border: black solid 5px;
-    border-radius: 10px;
-    transition: 0.3s;
-    
-  }
-  #tabla-fotos img:hover{
-    transform: scale(1.1);
-    transition: 0.3s;
-  }
+#lista-fotos {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-  figure {
-    background-color: var(--blocks-color1);
-    padding: 20px;
-    border-radius: 10px;
-  }
+#lista-fotos img {
+  object-fit: cover;
+  height: 300px;
+  transition: 0.3s;
+}
 
-  figcaption {
-    text-align: center;
-    font-weight: bold;
-  }
+#lista-fotos div {
+  border: black solid 5px;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
-  #tabla-planes {
-    margin-left: auto;
-    margin-right: auto;
-  }
+#lista-fotos img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
 
-  #tabla-planes th:first-child {
-    border-top-left-radius: 10px;
-  }
+figure {
+  background-color: var(--blocks-color1);
+  padding: 20px;
+  border-radius: 10px;
+}
 
-  #tabla-planes th:last-child {
-    border-top-right-radius: 10px;
-  }
+figcaption {
+  text-align: center;
+  font-weight: bold;
+}
 
-  #tabla-planes tr:last-child td:first-child {
-    border-bottom-left-radius: 10px;
-  }
+#tabla-planes {
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  #tabla-planes tr:last-child td:last-child {
-    border-bottom-right-radius: 10px;
-  }
+#tabla-planes th:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
 
-  #tabla-planes thead {
-    font-size: 1.5rem;
-  }
+#tabla-planes th:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 
-  #tabla-planes th {
-    padding: 10px;
-  }
+#tabla-planes tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+#tabla-planes tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+#tabla-planes tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+}
+#tabla-planes tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
 
-  #tabla-planes thead th:nth-child(odd) {
-    background-color: color-mix(in srgb, var(--blocks-color1) 70%, white 30%);
-  }
+#tabla-planes thead {
+  font-size: 1.5rem;
+}
 
-  #tabla-planes thead th:nth-child(even) {
-    background-color: color-mix(in srgb, var(--blocks-color2) 70%, white 30%);
-  }
+#tabla-planes th {
+  padding: 10px;
+}
 
-  #tabla-planes td:nth-child(odd) {
-    background-color: color-mix(in srgb, var(--blocks-color1) 70%, black 30%);
-  }
+#tabla-planes thead th:nth-child(odd) {
+  background-color: color-mix(in srgb, var(--blocks-color1) 70%, white 30%);
+}
 
-  #tabla-planes td:nth-child(even) {
-    background-color: color-mix(in srgb, var(--blocks-color2) 70%, black 30%);
-  }
+#tabla-planes thead th:nth-child(even) {
+  background-color: color-mix(in srgb, var(--blocks-color2) 70%, white 30%);
+}
 
-  #tabla-planes tbody tr:last-child {
-    text-align: center;
-    font-size: 1.2rem;
-  }
+#tabla-planes td:nth-child(odd) {
+  background-color: color-mix(in srgb, var(--blocks-color1) 70%, black 30%);
+}
 
+#tabla-planes td:nth-child(even) {
+  background-color: color-mix(in srgb, var(--blocks-color2) 70%, black 30%);
+}
+
+#tabla-planes tbody tr:last-child {
+  text-align: center;
+  font-size: 1.2rem;
+}
 
 quote {
   text-align: center;
-  text-shadow: 5px 5px 5px black;
   display: block;
   font-size: 1.2em;
   font-style: italic;
@@ -194,12 +214,6 @@ p {
 }
 
 footer {
-  background-color: var(--blocks-color1);
-  box-shadow: 5px 5px 5px black;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   margin-top: 20px;
-  padding: 10px;
+  justify-content: space-around;
 }

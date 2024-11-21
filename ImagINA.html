@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-    <header>
-        <h1>Imag<span id="color-logo">INA</span></h1>
+    <header class="sombra-caja bloque">
+        <h1 class="sombra-texto montserrat">Imag<span id="color-logo">INA</span></h1>
         <img src="https://imagina.cc/wp-content/uploads/2015/10/imagina-nuevo-logo.png" alt="Logo de ImagINA">
-        <nav>
+        <nav class="sombra-caja">
             Menú
             <ul>
                 <li><a href="#">Inicio</a></li>
@@ -21,52 +21,80 @@
     </header>
     <main>
         <section>
-            <h2 id="Fotos">Fotos</h2>
-            <table id="tabla-fotos">
-                <tbody>
-                    <tr>
-                        <td>
-                            <figure>
+            <h2 id="Fotos" class="sombra-caja bloque">Fotos</h2>
+            <ul id="lista-fotos">
+                <li>
+                        <figure>
+                            <div>
                                 <img src="https://cdn.pixabay.com/photo/2023/10/24/12/01/pumpkins-8338100_1280.jpg" width="400px"
-                                    alt="Cuando el otoño te da calabazas">
-                                <figcaption>Cuando el otoño te da calabazas</figcaption>
-                            </figure>
-                        </td>
-                        <td>
-                            <figure>
+                                alt="Cuando el otoño te da calabazas">
+                            </div>
+                            
+                            <figcaption>Cuando el otoño te da calabazas</figcaption>
+                        </figure>
+                </li>
+                <li>
+                        <figure>
+                            <div>
                                 <img src="https://cdn.pixabay.com/photo/2023/04/10/19/42/sea-7914544_1280.jpg" width="400px"
-                                    alt="Bebiendo agua en el agua">
-                                <figcaption>Bebiendo agua en el agua</figcaption>
-                            </figure>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <figure>
+                                alt="Bebiendo agua en el agua">
+                            </div>
+                            
+                            <figcaption>Bebiendo agua en el agua</figcaption>
+                        </figure>
+                </li>
+                <li>
+                        <figure>
+                            <div>
                                 <img src="https://cdn.pixabay.com/photo/2024/09/21/19/23/corn-9064747_1280.jpg" width="400px"
-                                    alt="Un atardecer palomitero">
-                                <figcaption>Un atardecer palomitero</figcaption>
-                            </figure>
-                        </td>
-                        <td>
-                            <figure>
+                                alt="Un atardecer palomitero">
+                            </div>
+                            
+                            <figcaption>Un atardecer palomitero</figcaption>
+                        </figure>
+                </li>
+                <li>
+                        <figure>
+                            <div>
                                 <img src="https://cdn.pixabay.com/photo/2023/09/25/07/54/lemon-cake-8274419_960_720.jpg" width="400px"
                                 alt="Un horneado cítrico">
-                                <figcaption>Un horneado cítrico</figcaption>
-                            </figure>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                            </div>
+                            
+                            <figcaption>Un horneado cítrico</figcaption>
+                        </figure>
+                </li>
+                <li>
+                        <figure>
+                            <div>
+                                <img src="https://cdn.pixabay.com/photo/2014/12/08/02/59/benches-560435_960_720.jpg" width="400px"
+                                alt="Sentadito">
+                            </div>
+                            
+                            <figcaption>Sentadito</figcaption>
+                        </figure>
+                </li>
+                <li>
+                        <figure>
+                            <div>
+                                <img src="https://cdn.pixabay.com/photo/2021/11/01/13/58/leaf-6760484_960_720.jpg" width="400px"
+                                alt="Capricho de otoño">
+                            </div>
+                            
+                            <figcaption>Capricho de otoño</figcaption>
+                        </figure>
+                </li>
+            </ul>
         </section>
         <section>
-            <h2 id="Planes%20y%20suscripciones">Planes y suscripciones</h2>
+            <h2 id="Planes%20y%20suscripciones" class="sombra-caja bloque">Planes y suscripciones</h2>
             <table id="tabla-planes">
                 <thead>
                     <tr>
                         <th>Plan Gratuito</th>
                         <th>Plan Básico</th>
                         <th>Plan Premium</th>
+                        <th>Plan Business</th>
+                        <th>Plan 4life</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -92,18 +120,34 @@
                                 <li>Hasta 1TB de almacenamiento en la nube</li>
                             </ul>
                         </td>
+                        <td>
+                            <ul>
+                                <li>Descargas de imágenes ilimitadas</li>
+                                <li>Imágenes en 8K</li>
+                                <li>Hasta 10TB de almacenamiento en la nube</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Descargas de imágenes ilimitadas</li>
+                                <li>Imágenes en 8K</li>
+                                <li>Almacenamiento ilimitado en la nube</li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
                         <td>Gratis</td>
                         <td>10€ al mes</td>
                         <td>50€ al mes</td>
+                        <td>100€ al mes</td>
+                        <td>2000€ pago único</td>
                     </tr>
                 </tbody>
             </table>
         </section>
         <section>
-            <h2 id="Sobre%20nosotros">Sobre nosotros</h2>
-            <p>En <em>ImagINA<sup>TM</sup></em>, somos un equipo de <strong>profesionales apasionados</strong> por el mundo de la
+            <h2 id="Sobre%20nosotros" class="sombra-caja bloque">Sobre nosotros</h2>
+            <p>En <em class="montserrat">ImagINA<sup>TM</sup></em>, somos un equipo de <strong>profesionales apasionados</strong> por el mundo de la
                 imagen y la creatividad digital. Desde el primer día, nuestro objetivo ha sido ofrecer
                 un espacio único para que las personas puedan <strong>expresarse libremente</strong> a través de
                 sus fotografías. Con años de experiencia en el sector, nos hemos consolidado como
@@ -113,21 +157,21 @@
                 crear <strong>galerías personalizadas</strong> que se adaptan a las necesidades de cada cliente.
                 Creemos firmemente en el valor de la <strong>imaginación sin límites</strong> y en la importancia
                 de brindar un soporte sólido a creadores de todo tipo, desde aficionados hasta
-                fotógrafos profesionales. Cada funcionalidad de <em>ImagINA<sup>TM</sup></em> está pensada para
+                fotógrafos profesionales. Cada funcionalidad de <em class="montserrat">ImagINA<sup>TM</sup></em> está pensada para
                 <strong>facilitar la creatividad</strong> y potenciar la expresión artística.</p>
             <p>Queremos que cada experiencia con nosotros sea única. Por eso, trabajamos
                 continuamente en mejorar nuestros servicios y mantenernos a la vanguardia de las
                 tendencias. Nuestro compromiso es ofrecer una plataforma que sea no sólo
                 visualmente atractiva, sino también <strong>fácil de usar</strong> y segura. ¡Nos encantaría que
-                formes parte de nuestra comunidad y explores todo lo que <em>ImagINA<sup>TM</sup></em> tiene para
+                formes parte de nuestra comunidad y explores todo lo que <em class="montserrat">ImagINA<sup>TM</sup></em> tiene para
                 ofrecer!</p>
-            <quote>
+            <quote class="sombra-texto">
                 En los momentos de crisis, sólo la imaginación es más importante que el conocimiento.
                 - Albert Einstein
             </quote>
         </section>
     </main>
-    <footer>
+    <footer class="sombra-caja bloque">
         <ul>
             <li><a href="" target="_blank">Política de Privacidad</a></li>
             <li><a href="" target="_blank">Términos y condiciones de servicio</a></li>
