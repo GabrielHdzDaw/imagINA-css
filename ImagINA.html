@@ -9,6 +9,12 @@
     <header class="sombra-caja bloque">
         <h1 class="sombra-texto montserrat">Imag<span id="color-logo">INA</span></h1>
         <img src="https://imagina.cc/wp-content/uploads/2015/10/imagina-nuevo-logo.png" alt="Logo de ImagINA">
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch" />
+            <label for="theme-switch">
+                <img src="night-mode.png" alt="">
+            </label>
+        </div>
         <nav class="sombra-caja">
             Menú
             <ul>
@@ -16,6 +22,7 @@
                 <li><a href="#Fotos">Fotos</a></li>
                 <li><a href="#Planes%20y%20suscripciones">Planes y suscripciones</a></li>
                 <li><a href="#Sobre%20nosotros">Sobre nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -24,64 +31,58 @@
             <h2 id="Fotos" class="sombra-caja bloque">Fotos</h2>
             <ul id="lista-fotos">
                 <li>
-                        <figure>
-                            <div>
-                                <img src="https://cdn.pixabay.com/photo/2023/10/24/12/01/pumpkins-8338100_1280.jpg" width="400px"
-                                alt="Cuando el otoño te da calabazas">
-                            </div>
-                            
-                            <figcaption>Cuando el otoño te da calabazas</figcaption>
-                        </figure>
+                    <figure>
+                        <div>
+                            <img src="https://cdn.pixabay.com/photo/2023/10/24/12/01/pumpkins-8338100_1280.jpg" width="400px"
+                            alt="Cuando el otoño te da calabazas">
+                        </div>                           
+                        <figcaption>Cuando el otoño te da calabazas</figcaption>
+                    </figure>
                 </li>
                 <li>
-                        <figure>
-                            <div>
-                                <img src="https://cdn.pixabay.com/photo/2023/04/10/19/42/sea-7914544_1280.jpg" width="400px"
-                                alt="Bebiendo agua en el agua">
-                            </div>
-                            
-                            <figcaption>Bebiendo agua en el agua</figcaption>
-                        </figure>
+                    <figure>
+                        <div>
+                            <img src="https://cdn.pixabay.com/photo/2023/04/10/19/42/sea-7914544_1280.jpg" width="400px"
+                            alt="Bebiendo agua en el agua">
+                        </div>                            
+                        <figcaption>Bebiendo agua en el agua</figcaption>
+                    </figure>
                 </li>
                 <li>
-                        <figure>
-                            <div>
-                                <img src="https://cdn.pixabay.com/photo/2024/09/21/19/23/corn-9064747_1280.jpg" width="400px"
-                                alt="Un atardecer palomitero">
-                            </div>
-                            
-                            <figcaption>Un atardecer palomitero</figcaption>
-                        </figure>
+                    <figure>
+                        <div>
+                            <img src="https://cdn.pixabay.com/photo/2024/09/21/19/23/corn-9064747_1280.jpg" width="400px"
+                            alt="Un atardecer palomitero">
+                        </div>
+                        <figcaption>Un atardecer palomitero</figcaption>
+                    </figure>
                 </li>
                 <li>
-                        <figure>
-                            <div>
-                                <img src="https://cdn.pixabay.com/photo/2023/09/25/07/54/lemon-cake-8274419_960_720.jpg" width="400px"
-                                alt="Un horneado cítrico">
-                            </div>
-                            
-                            <figcaption>Un horneado cítrico</figcaption>
-                        </figure>
+                    <figure>
+                        <div>
+                            <img src="https://cdn.pixabay.com/photo/2023/09/25/07/54/lemon-cake-8274419_960_720.jpg" width="400px"
+                            alt="Un horneado cítrico">
+                        </div>
+                        <figcaption>Un horneado cítrico</figcaption>
+                    </figure>
                 </li>
                 <li>
-                        <figure>
-                            <div>
-                                <img src="https://cdn.pixabay.com/photo/2014/12/08/02/59/benches-560435_960_720.jpg" width="400px"
-                                alt="Sentadito">
-                            </div>
-                            
-                            <figcaption>Sentadito</figcaption>
-                        </figure>
+                    <figure>
+                        <div>
+                            <img src="https://cdn.pixabay.com/photo/2014/12/08/02/59/benches-560435_960_720.jpg" width="400px"
+                            alt="Sentadito">
+                        </div>
+                        <figcaption>Sentadito</figcaption>
+                    </figure>
                 </li>
                 <li>
-                        <figure>
-                            <div>
-                                <img src="https://cdn.pixabay.com/photo/2021/11/01/13/58/leaf-6760484_960_720.jpg" width="400px"
-                                alt="Capricho de otoño">
-                            </div>
-                            
-                            <figcaption>Capricho de otoño</figcaption>
-                        </figure>
+                    <figure>
+                        <div>
+                            <img src="https://cdn.pixabay.com/photo/2021/11/01/13/58/leaf-6760484_960_720.jpg" width="400px"
+                            alt="Capricho de otoño">
+                        </div>
+                        <figcaption>Capricho de otoño</figcaption>
+                    </figure>
                 </li>
             </ul>
         </section>
@@ -169,6 +170,18 @@
                 En los momentos de crisis, sólo la imaginación es más importante que el conocimiento.
                 - Albert Einstein
             </quote>
+        </section>
+        <section>
+            <h2 class="bloque" id="contacto">Contacto</h2>
+            <form action="#contacto">
+                <label for="asunto">Asunto</label>
+                <input type="text" id="asunto" name="asunto">
+                <label for="para">Email</label>
+                <input type="email" id="para" name="para">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="75" rows="5"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
     <footer class="sombra-caja bloque">
