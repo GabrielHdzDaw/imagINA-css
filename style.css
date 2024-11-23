@@ -10,7 +10,7 @@
   --blocks-color2: #546b38;
 }
 
-body:has(#theme-switch:checked) {
+body:has(#cambiar-tema:checked) {
   --background-color: #c2e890;
   --background-color2: #9cbb75;
   --headings-color: #a9d96f;
@@ -268,7 +268,7 @@ footer {
   box-shadow: 0px 5px 5px rgb(0, 0, 0);
 }
 
-.theme-toggle {
+.claroscuro {
   position: fixed;
   top: 20px;
   right: 20px;
@@ -276,18 +276,18 @@ footer {
   transform: scale(1);
 }
 
-.theme-toggle input {
+.claroscuro input {
   display: none;
 }
 
-.theme-toggle label {
+.claroscuro label {
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
 
-.theme-toggle img {
+.claroscuro img {
   width: 25px;
   height: 25px;
   transition: opacity 0.3s, transform 0.3s;
