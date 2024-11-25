@@ -90,6 +90,11 @@ h2 {
   text-shadow: 0px 3px 5px black;
 }
 
+h2{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 quote {
   text-align: center;
   display: block;
@@ -263,7 +268,7 @@ footer {
   background-color: var(--blocks-color1);
   display: flex;
   align-items: center;
-
+  
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0px 5px 5px rgb(0, 0, 0);
