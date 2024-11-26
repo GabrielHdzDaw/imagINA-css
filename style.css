@@ -1,23 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-:root {
-  --background-color: #242b1b;
-  --background-color2: #495737;
-  --headings-color: #87ae57;
-  --text-color: #99da49;
-  --links-color: #bbff68;
-  --blocks-color1: #52594a;
-  --blocks-color2: #546b38;
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: #c2e890;
+    --background-color2: #9cbb75;
+    --headings-color: #a9d96f;
+    --text-color: #212f10;
+    --links-color: #66a815;
+    --blocks-color1: #c0d2ab;
+    --blocks-color2: #71904b;
+  }
+
+  /* Cambiar a tema oscuro cuando #cambiar-tema está marcado */
+  body:has(#cambiar-tema:checked) {
+    --background-color: #242b1b;
+    --background-color2: #495737;
+    --headings-color: #87ae57;
+    --text-color: #99da49;
+    --links-color: #bbff68;
+    --blocks-color1: #52594a;
+    --blocks-color2: #546b38;
+  }
 }
 
-body:has(#cambiar-tema:checked) {
-  --background-color: #c2e890;
-  --background-color2: #9cbb75;
-  --headings-color: #a9d96f;
-  --text-color: #212f10;
-  --links-color: #97f424;
-  --blocks-color1: #c0d2ab;
-  --blocks-color2: #71904b;
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #242b1b;
+    --background-color2: #495737;
+    --headings-color: #87ae57;
+    --text-color: #99da49;
+    --links-color: #bbff68;
+    --blocks-color1: #52594a;
+    --blocks-color2: #546b38;
+  }
+
+  /* Cambiar a tema claro cuando #cambiar-tema está marcado */
+  body:has(#cambiar-tema:checked) {
+    --background-color: #c2e890;
+    --background-color2: #9cbb75;
+    --headings-color: #a9d96f;
+    --text-color: #212f10;
+    --links-color: #66a815;
+    --blocks-color1: #c0d2ab;
+    --blocks-color2: #71904b;
+  }
 }
 
 body {
@@ -90,7 +117,7 @@ h2 {
   text-shadow: 0px 3px 5px black;
 }
 
-h2{
+h2 {
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -140,6 +167,7 @@ form input,
 textarea,
 button {
   border-radius: 10px;
+  border: var(--links-color) 2px solid;
   background-color: var(--background-color2);
   color: var(--text-color);
   font-size: 1.1rem;
@@ -268,7 +296,7 @@ footer {
   background-color: var(--blocks-color1);
   display: flex;
   align-items: center;
-  
+
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0px 5px 5px rgb(0, 0, 0);
