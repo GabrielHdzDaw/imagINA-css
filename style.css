@@ -57,7 +57,7 @@ header a {
 }
 
 header a:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
   transition: 0.2s;
 }
 
